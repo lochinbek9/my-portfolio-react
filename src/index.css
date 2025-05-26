@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap");
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    overflow-y: hidden;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: inline-block;
+}
+
+:root{
+    --prim-color: #BFF747;
+    --white-color: #fff;
+    --black-color: #000;
+    --light-color: #3D3E3C;
+
+    --poppins: "Poppins";
+    --transition-regular: .3s;
+}
+
+/* NAVBAR */
+
+.nav-container{
+    z-index: 9999;
+}
+
+.logo span{
+    color: var(--prim-color);
+}
+
+.nav-menu li a{
+    position: relative;
+    transition: var(--transition-regular);
+}
+
+.nav-menu li a:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 5px;
+    background-color: var(--prim-color);
+    transition: var(--transition-regular);
+}
+
+
+.nav-menu li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 5px;
+    background-color: var(--prim-color);
+    transition: var(--transition-regular);
+}
+
+.nav-menu li a:hover::after,
+.nav-menu li a:hover::before{
+    width: 100%;
+}
+
+.nav-menu li a:hover{
+   color: var(--prim-color) !important;
+}
+
+.hero-social-icon i{
+    font-size: 1.5rem;
+    color: var(--prim-color);
+    transition: var(--transition-regular);
+}
+
+.hero-social-icon i:hover{
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 991px){
+    .hero-social-icon{
+        display: none !important;
+    }
+}
+
+/* Hero Section */
+
+.video-bg{
+    position: relative;
+}
+
+.video-bg::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
