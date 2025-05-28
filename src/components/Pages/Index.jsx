@@ -76,7 +76,7 @@ function Index() {
 
       {/* ABOUT-US */}
 
-      {/* <div className="large-section pt-5 about-us">
+      <div className="large-section pt-5 about-us">
         <div className="container my-5 py-5">
           <div className="row">
               <div className="col-lg-6">
@@ -89,7 +89,7 @@ function Index() {
               <div className="col-lg-6"></div>
           </div>
         </div>
-      </div> */}
+      </div> 
 
 
     </>

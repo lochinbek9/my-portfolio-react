@@ -7,9 +7,9 @@ function Nav() {
         <nav className='navbar navbar-expand-lg py-3'>
           <div className="container-fluid">
             <a href="" className='navbar-brand logo text-white fw-bold fs-3'>
-              Lochinbek &
+              D.Lochinbek &
               <br />
-              Dehkonov
+            
             </a>
             <button className='navbar-toggler text-white border-0' type='button' data-bs-toggle="collapse" data-bs-target="#navbarNav">
               <i className='ri-menu-line fs-3 text-white'></i>
