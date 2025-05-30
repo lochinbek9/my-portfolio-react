@@ -169,7 +169,7 @@ function Index() {
           </div>
 
           <div className="row g-4">
-              {/* Card 1  */}
+            {/* Card 1  */}
             <div className="col-lg-4">
               <div className="ser-card h-100">
                 <div className="section-image">
@@ -234,64 +234,97 @@ function Index() {
             </div>
             {/* Card 3 end */}
           </div>
-          
 
-        
+
+
         </div>
       </div>
       {/* What We Do */}
 
-      <div className="container">
-          <div className="row section-head py-5">
-            <div className="col-lg-6">
-              <div className="section-title">
-                <h5><img src={titleShape} className='img-fluid me-2' alt="" />WHAT WE DO</h5>
-                <h2>Empowering success <span>freelance</span> solutions</h2>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <p>Explore our range of in-demand services designed to deliver exceptional results and meet your unique.</p>
-             
+      <div className="container what-we-do">
+        <div className="row section-head py-5">
+          <div className="col-lg-6">
+            <div className="section-title">
+              <h5><img src={titleShape} className='img-fluid me-2' alt="" />WHAT WE DO</h5>
+              <h2>Empowering success <span>freelance</span> solutions</h2>
             </div>
           </div>
-          <div className="row g-4">
-              <div className="col-lg-6 service-wrap">
-                  <div className="service-card">
-                      <div className="service-icon mb-4">
-                          <img src={whatIcon1} alt="" />
-                      </div>
-                      <h5>Content Creation </h5>
-                      <p>Crafting compelling, SEO-friendly content that resonates with audience From blogs to website copy, we deliver engaiging</p>
-                  </div>
-              </div>
-              <div className="col-lg-6 service-wrap">
-                  <div className="service-card">
-                      <div className="service-icon mb-4">
-                          <img src={whatIcon2} alt="" />
-                      </div>
-                      <h5>Content Creation </h5>
-                      <p>Crafting compelling, SEO-friendly content that resonates with audience From blogs to website copy, we deliver engaiging</p>
-                  </div>
-              </div>
-              <div className="col-lg-6 service-wrap">
-                  <div className="service-card">
-                      <div className="service-icon mb-4">
-                          <img src={whatIcon3} alt="" />
-                      </div>
-                      <h5>Content Creation </h5>
-                      <p>Crafting compelling, SEO-friendly content that resonates with audience From blogs to website copy, we deliver engaiging</p>
-                  </div>
-              </div>
-              <div className="col-lg-6 service-wrap">
-                  <div className="service-card">
-                      <div className="service-icon mb-4">
-                          <img src={whatIcon4} alt="" />
-                      </div>
-                      <h5>Content Creation </h5>
-                      <p>Crafting compelling, SEO-friendly content that resonates with audience From blogs to website copy, we deliver engaiging</p>
-                  </div>
-              </div>
+          <div className="col-lg-6">
+            <p>Explore our range of in-demand services designed to deliver exceptional results and meet your unique.</p>
+
           </div>
+        </div>
+        <div className="row g-4">
+          <div className="col-lg-6 service-wrap">
+            <div className="service-card">
+              <div className="service-icon mb-4">
+                <img src={whatIcon1} alt="" />
+              </div>
+              <h5>Content Creation </h5>
+              <p>Crafting compelling, SEO-friendly content that resonates with audience From blogs to website copy, we deliver engaiging</p>
+            </div>
+          </div>
+          <div className="col-lg-6 service-wrap">
+            <div className="service-card">
+              <div className="service-icon mb-4">
+                <img src={whatIcon2} alt="" />
+              </div>
+              <h5>Content Creation </h5>
+              <p>Crafting compelling, SEO-friendly content that resonates with audience From blogs to website copy, we deliver engaiging</p>
+            </div>
+          </div>
+          <div className="col-lg-6 service-wrap">
+            <div className="service-card">
+              <div className="service-icon mb-4">
+                <img src={whatIcon3} alt="" />
+              </div>
+              <h5>Content Creation </h5>
+              <p>Crafting compelling, SEO-friendly content that resonates with audience From blogs to website copy, we deliver engaiging</p>
+            </div>
+          </div>
+          <div className="col-lg-6 service-wrap">
+            <div className="service-card">
+              <div className="service-icon mb-4">
+                <img src={whatIcon4} alt="" />
+              </div>
+              <h5>Content Creation </h5>
+              <p>Crafting compelling, SEO-friendly content that resonates with audience From blogs to website copy, we deliver engaiging</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div className='py-5 bg-black text-white position-relative'>
+        <div className='container'>
+          <div className='position-relative overflow-hidden rounded-5 banner-container d-flex'>
+            <div className='position-relative'>
+              <div className='section-title banner-title p-5 mb-5'>
+                <h3 className='fw-bold mb-2 text-uppercase'>Videos</h3>
+                <h2 className='display-4 fw-normal'>Showing Success through Dynamic <span className='fw-bold'>Videos</span></h2>
+              </div>
+
+              <div className='play-btn'>
+                <i className='bi bi-play-fill'></i>
+              </div>
+
+              <div className='position-absolute bottom-0 start-0 end-0 py-4 text-white fw-medium d-flex flex-wrap justify-content-center gap-4 border-top border-white border-opacity-25'>
+                <div>
+                  <i className='bi bi-check-circle-fill mb-2' style={{color: "#bff747"}}></i>
+                  Client Success Stories Action
+                </div>
+                <div>
+                  <i className='bi bi-check-circle-fill mb-2' style={{color: "#bff747"}}></i>
+                 Transforming Idea Into Visual 
+                </div>
+                <div>
+                  <i className='bi bi-check-circle-fill mb-2' style={{color: "#bff747"}}></i>
+                 Creative Freelance Servicess
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )

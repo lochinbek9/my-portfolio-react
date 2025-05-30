@@ -469,4 +469,93 @@ img{
     top: 0%;
 }
 
+.service-card:hover{
+    color: var(--black-color);
+}
+
+.service-card:hover img{
+    transform: rotateY(180deg);
+    filter: brightness(0) invert(0);
+}
+
+.service-card img{
+    width: 42px;
+    height: 42px;
+    transition: var(--transition-slow);
+    cursor: pointer;
+}
+
+/*  */
+
+.what-we-do::before{
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0%;
+    top: 350%;
+    z-index: 1;
+    background: url(./assets/img/section-bg-shape-2.png) no-repeat;
+    background-position: right center;
+    background-size: contain;
+    width: 250px;
+    height: 250px;
+    transform: translateY(-50%);
+    opacity: 50%;
+    animation: circlemoverotate 10s infinite linear;
+    animation-direction: alternate;
+}
+
+@keyframes circlemoverotate{
+    0%{
+        transform: translateY(0) rotate(0deg);
+    }
+    100%{
+        transform: translateY(-100%) rotate(360deg);
+    }
+}
+
+.banner-container{
+    height: 650px;
+    background: url(./assets/img/intro-video-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-container::after, .banner-container::before{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.3);
+}
+
+.banner-title{
+    font-size: 3rem;
+    width: 60%;
+} 
+
+.play-btn{
+    width: 120px;
+    height: 120px;
+    background-color: var(--prim-color);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 120px;
+    top: 120px;    
+}
+
+.play-btn::before, .play-btn::after{
+    content: '';
+    position: absolute;
+    top: -30%;
+    left: -30%;
+}
+
 /*End-What We Do */
