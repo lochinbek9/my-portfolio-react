@@ -32,6 +32,9 @@ import whatIcon1 from "./../../assets/img/icon-what-we-1.svg"
 import whatIcon2 from "./../../assets/img/icon-what-we-2.svg"
 import whatIcon3 from "./../../assets/img/icon-what-we-3.svg"
 import whatIcon4 from "./../../assets/img/icon-what-we-4.svg"
+import expertiseIcon01 from "./../../assets/img/icon-expertise-1.svg"
+import expertiseIcon02 from "./../../assets/img/icon-expertise-2.svg"
+import expertise from "./../../assets/img/expertise-image.png"
 
 function Index() {
   return (
@@ -322,6 +325,53 @@ function Index() {
                  Creative Freelance Servicess
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='large-section'>
+        <div className='container my-5 py-5 expertise-section'>
+          <div className='row align-items-center g-5'>
+            <div className='col-lg-6'>
+              <div className='section-title'>
+                <h5>
+                  <img src={titleShape} alt="" className='img-fluid me-2' />
+                  Our Experties
+                </h5>
+                <h2>Maximizing Value Trough Freelance <span>Experties</span></h2>
+              </div>
+
+              <div className="row mt-4 g-3">
+                  <div className="col-md-6">
+                    <div className="expertise-box">
+                      <div className="expertise-icon mb-4">
+                        <img src={expertiseIcon01} alt="" />
+                      </div>
+                      <h5 className='fw-bold mb-3'>Quality Assurance</h5>
+                      <p>Freelances are commited and delivering top Quality work. </p>
+                    </div>
+                  </div>
+
+                  <div className="col-md-6">
+                    <div className="expertise-box">
+                      <div className="expertise-icon mb-4">
+                        <img src={expertiseIcon02} alt="" />
+                      </div>
+                      <h5 className='fw-bold mb-3'>Scalable Workfource</h5>
+                      <p>Freelances are commited and delivering top Quality work. </p>
+                    </div>
+                  </div>
+
+                  <div className="btn-1">
+                    <button>See All Services</button>
+                    <img src={btnArrow}/>
+                  </div>
+              </div>
+            </div>
+
+            <div className="col-lg-6 mt-5 mt-xl-0">
+              <img src={expertise} className='img-fluid' alt="" />
             </div>
           </div>
         </div>
