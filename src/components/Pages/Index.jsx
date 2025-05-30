@@ -36,6 +36,8 @@ import expertiseIcon01 from "./../../assets/img/icon-expertise-1.svg"
 import expertiseIcon02 from "./../../assets/img/icon-expertise-2.svg"
 import expertise from "./../../assets/img/expertise-image.png"
 
+import icon from "./../../assets/img/icon-pricing-1.svg"
+
 function Index() {
   return (
     <>
@@ -375,6 +377,40 @@ function Index() {
             </div>
           </div>
         </div>
+        {/* Pricing */}
+
+        <section className="py-5 text-white">
+          <div className="container">
+             <div className="row section-head py-5">
+                <div className="col-lg-6">
+                  <div className="section-title">
+                    <h5>
+                      <img src={titleShape} className='img-fluid me-2' alt="" />
+                      <h2>Flexible <span>pricing </span> plan </h2>
+                    </h5>
+                  </div>
+                </div>
+                <div className="col-lg-6">
+                  <p>Our flexible pricing plans are designed to meet diverse eeds, offering customezed solutions that fit your. </p>
+                  <div className="btn-1">
+                    <button className='btn'>Contact us</button>
+                    <img src={btnArrow} alt="" />
+                  </div>
+                </div>
+             </div>
+             <div className="row g-4 mt-5">
+                <div className="row">
+                  <div className="col-xl-4 col-md-6 mb-4">
+                    <div className='card pricing-item text-white bg-dark h-100 rounded-4 border-0 position-relative overflow-hidden'>
+                      <div className="position-absolute top-0 start-0 w-100 h-100" style={{background: "var(--secondary-color)", opacity: "0.4",  zIndex: "-1"}}>
+                          
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             </div>
+          </div>
+        </section>
       </div>
     </>
   )

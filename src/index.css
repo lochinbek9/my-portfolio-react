@@ -615,3 +615,43 @@ img{
     }
 }
 /*End-What We Do */
+
+.expertise-section{
+    position: relative;
+}
+
+.expertise-section::before{
+    content: '';
+    position: absolute;
+    display: block;
+    left: -18%;
+    top: 50%;
+    background: url(./assets/img/section-bg-shape-4.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    transform: translateY(-50%);
+    opacity: 50%;
+    animation: circlemoverotate 10s infinite linear;
+    animation-direction: alternate;
+}
+
+.expertise-box{
+    padding: 30px 25px;
+    background-color: #1b1b1b;
+    border: 2px solid #ffffff1a;
+    border-radius: 20px;
+}
+
+.expertise-box img{
+    width: 42px;
+    height: 42px;
+    transition: var(--transition-slow);
+    cursor: pointer;
+}
+ 
+.expertise-box:hover img{
+    transform: rotate(-180deg);
+    filter: brightness(0) invert(1);
+}
