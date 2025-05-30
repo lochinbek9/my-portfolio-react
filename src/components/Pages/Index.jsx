@@ -148,17 +148,39 @@ function Index() {
       </div>
       <div className="service section my-5 py-5">
         <div className="container my-5 py-5">
+          <div className="row section-head py-5">
+            <div className="col-lg-6">
+              <div className="section-title">
+                <h5><img src={titleShape} className='img-fluid me-2' alt="" />Services</h5>
+                <h2>Our Popular <span>Services</span> </h2>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <p>Explore our range of in-demand services designed to deliver exceptional results and meet your unique.</p>
+              <div className="btn-1">
+                <button className='btn'>See All Services</button>
+                <img src={btnArrow} alt="" />
+              </div>
+            </div>
+          </div>
           <div className="row g-4">
             <div className="col-lg-4">
               <div className="ser-card h-100">
-                  <div className="section-image">
-                      <img src={service1} className='card-img-top' alt="" />
+                <div className="section-image">
+                  <img src={service1} className='card-img-top' alt="" />
+                </div>
+                <div className="ser-card-body">
+                  <div className="ser-icon mb-3">
+                    <img src={serviceIcon1} alt="" />
                   </div>
-                  <div className="ser-card-body">
-                      <div className="ser-icon mb-3">
-                          <img src="" alt="" />
-                      </div>
-                  </div>
+                  <h5 className='ser-card-title'>E-Commerce Managment</h5>
+                  <p className='ser-card-text'>Streamling your online store, optimizing and product listings.</p>
+                </div>
+                <div className="read-more d-flex align-items-center justify-content-center">
+                  <button type='button'>Read More
+                    <i className='ri-arrow-right-up-line'></i>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
