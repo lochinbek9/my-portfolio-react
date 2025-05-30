@@ -163,7 +163,9 @@ function Index() {
               </div>
             </div>
           </div>
+
           <div className="row g-4">
+              {/* Card 1  */}
             <div className="col-lg-4">
               <div className="ser-card h-100">
                 <div className="section-image">
@@ -183,7 +185,54 @@ function Index() {
                 </div>
               </div>
             </div>
+
+            {/* Card 1 END */}
+
+            {/* Card 2  */}
+            <div className="col-lg-4">
+              <div className="ser-card h-100">
+                <div className="section-image">
+                  <img src={service2} className='card-img-top' alt="" />
+                </div>
+                <div className="ser-card-body">
+                  <div className="ser-icon mb-3">
+                    <img src={serviceIcon2} alt="" />
+                  </div>
+                  <h5 className='ser-card-title'>Telegram bot</h5>
+                  <p className='ser-card-text'>Streamling your online store, optimizing and product listings.</p>
+                </div>
+                <div className="read-more d-flex align-items-center justify-content-center">
+                  <button type='button'>Read More
+                    <i className='ri-arrow-right-up-line'></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            {/* Card 3 */}
+            <div className="col-lg-4">
+              <div className="ser-card h-100">
+                <div className="section-image">
+                  <img src={service3} className='card-img-top' alt="" />
+                </div>
+                <div className="ser-card-body">
+                  <div className="ser-icon mb-3">
+                    <img src={serviceIcon3} alt="" />
+                  </div>
+                  <h5 className='ser-card-title'>Web development</h5>
+                  <p className='ser-card-text'>Streamling your online store, optimizing and product listings.</p>
+                </div>
+                <div className="read-more d-flex align-items-center justify-content-center">
+                  <button type='button'>Read More
+                    <i className='ri-arrow-right-up-line'></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            {/* Card 3 end */}
           </div>
+          
+
+        
         </div>
       </div>
     </>
