@@ -315,16 +315,16 @@ function Index() {
 
               <div className='position-absolute bottom-0 start-0 end-0 py-4 text-white fw-medium d-flex flex-wrap justify-content-center gap-4 border-top border-white border-opacity-25'>
                 <div>
-                  <i className='bi bi-check-circle-fill mb-2' style={{color: "#bff747"}}></i>
+                  <i className='bi bi-check-circle-fill mb-2' style={{ color: "#bff747" }}></i>
                   Client Success Stories Action
                 </div>
                 <div>
-                  <i className='bi bi-check-circle-fill mb-2' style={{color: "#bff747"}}></i>
-                 Transforming Idea Into Visual 
+                  <i className='bi bi-check-circle-fill mb-2' style={{ color: "#bff747" }}></i>
+                  Transforming Idea Into Visual
                 </div>
                 <div>
-                  <i className='bi bi-check-circle-fill mb-2' style={{color: "#bff747"}}></i>
-                 Creative Freelance Servicess
+                  <i className='bi bi-check-circle-fill mb-2' style={{ color: "#bff747" }}></i>
+                  Creative Freelance Servicess
                 </div>
               </div>
             </div>
@@ -345,30 +345,30 @@ function Index() {
               </div>
 
               <div className="row mt-4 g-3">
-                  <div className="col-md-6">
-                    <div className="expertise-box">
-                      <div className="expertise-icon mb-4">
-                        <img src={expertiseIcon01} alt="" />
-                      </div>
-                      <h5 className='fw-bold mb-3'>Quality Assurance</h5>
-                      <p>Freelances are commited and delivering top Quality work. </p>
+                <div className="col-md-6">
+                  <div className="expertise-box">
+                    <div className="expertise-icon mb-4">
+                      <img src={expertiseIcon01} alt="" />
                     </div>
+                    <h5 className='fw-bold mb-3'>Quality Assurance</h5>
+                    <p>Freelances are commited and delivering top Quality work. </p>
                   </div>
+                </div>
 
-                  <div className="col-md-6">
-                    <div className="expertise-box">
-                      <div className="expertise-icon mb-4">
-                        <img src={expertiseIcon02} alt="" />
-                      </div>
-                      <h5 className='fw-bold mb-3'>Scalable Workfource</h5>
-                      <p>Freelances are commited and delivering top Quality work. </p>
+                <div className="col-md-6">
+                  <div className="expertise-box">
+                    <div className="expertise-icon mb-4">
+                      <img src={expertiseIcon02} alt="" />
                     </div>
+                    <h5 className='fw-bold mb-3'>Scalable Workfource</h5>
+                    <p>Freelances are commited and delivering top Quality work. </p>
                   </div>
+                </div>
 
-                  <div className="btn-1">
-                    <button>See All Services</button>
-                    <img src={btnArrow}/>
-                  </div>
+                <div className="btn-1">
+                  <button>See All Services</button>
+                  <img src={btnArrow} />
+                </div>
               </div>
             </div>
 
@@ -381,34 +381,49 @@ function Index() {
 
         <section className="py-5 text-white">
           <div className="container">
-             <div className="row section-head py-5">
-                <div className="col-lg-6">
-                  <div className="section-title">
-                    <h5>
-                      <img src={titleShape} className='img-fluid me-2' alt="" />
-                      <h2>Flexible <span>pricing </span> plan </h2>
-                    </h5>
-                  </div>
+            <div className="row section-head py-5">
+              <div className="col-lg-6">
+                <div className="section-title">
+                  <h5>
+                    <img src={titleShape} className='img-fluid me-2' alt="" />
+                    <h2>Flexible <span>pricing </span> plan </h2>
+                  </h5>
                 </div>
-                <div className="col-lg-6">
-                  <p>Our flexible pricing plans are designed to meet diverse eeds, offering customezed solutions that fit your. </p>
-                  <div className="btn-1">
-                    <button className='btn'>Contact us</button>
-                    <img src={btnArrow} alt="" />
-                  </div>
+              </div>
+              <div className="col-lg-6">
+                <p>Our flexible pricing plans are designed to meet diverse eeds, offering customezed solutions that fit your. </p>
+                <div className="btn-1">
+                  <button className='btn'>Contact us</button>
+                  <img src={btnArrow} alt="" />
                 </div>
-             </div>
-             <div className="row g-4 mt-5">
-                <div className="row">
-                  <div className="col-xl-4 col-md-6 mb-4">
-                    <div className='card pricing-item text-white bg-dark h-100 rounded-4 border-0 position-relative overflow-hidden'>
-                      <div className="position-absolute top-0 start-0 w-100 h-100" style={{background: "var(--secondary-color)", opacity: "0.4",  zIndex: "-1"}}>
-                          
+              </div>
+            </div>
+
+            <div className="row g-4 mt-5">
+              <div className="row">
+                <div className="co1-x1-4 col-md-6 mb-4">
+                  <div className="card pricing-item text-white bg-dark h-100 rounded-4 border-0 position-relative
+overflow-hidden">
+                    <div className="position-absolute top-0 start-0 w-100 h-100"
+                      style={{ backgroundColor: "var(--secondary-color)", opacity: "9.4", zIndex: "-1" }}></div>
+                    <div className="card-body z-2 p-4 d-flex flex-column justify-content-between">
+                      <div className="pricing-header d-flex align-items-center mb-4">
+                        <div className="icon-box me-4 d-flex align-items-center justify-content-center rounded-circle overflow-hidden" style={{ height: "60", width: "60" }}>
+                          <img src={icon} alt="icon" className="img-fluid" />
+                        </div>
+                        <div className="pricing-price">
+                          <h2 className="fw-bold mb-0">$29<sub className="Ifs-6">/Per Month</sub></h2>
+                        </div>
                       </div>
+
+                      <h4 className='text-white fw-bold fs-5 text-capitalize mb-3'></h4>
                     </div>
                   </div>
                 </div>
-             </div>
+              </div>
+            </div>
+
+
           </div>
         </section>
       </div>
