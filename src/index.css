@@ -179,7 +179,7 @@ img{
 
 .large-section{
     background: url(./assets/img/section-bg-circle-shape.png);
-    background-position: center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -201,13 +201,13 @@ img{
     letter-spacing: 1px;
 }
 
-.section-title h1{
+.section-title h2{
     font-size: 3.5rem;
     color: var(--white-color);
     font-weight: 400;
 }
 
-.section-title h1 span{
+.section-title h2 span{
     color: var(--prim-color);
     font-weight: 600;
 }
@@ -291,8 +291,9 @@ img{
     content: '';
     position: absolute;
     display: block;
-    right: -20px;
+    right: 3%;
     top: 50%;
+    z-index: 1;
     background: url(./assets/img/section-bg-shape-1.png) no-repeat;
     background-position: right center;
     background-size: contain;
@@ -312,7 +313,6 @@ img{
         transform: translateY(-100%) rotate(360deg);
     }
 }
-
 
 .ser-card{
     border: 1px solid #ffffff1a;
@@ -380,3 +380,60 @@ img{
     transform: rotateY(180deg);
     filter: brightness(0) invert(1);
 }
+
+.read-more button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    background-color: var(--light-color);
+    color: var(--white-color);
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 15px 30px;
+    font-weight: 700;
+    transition: var(--transition-regular);
+    cursor: pointer;
+}
+
+.read-more button i{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    transition: var(--transition-slow);
+    cursor: pointer;
+    display: inline-block;
+}
+
+.read-more button:hover{
+    background-color: var(--prim-color);
+    color: var(--black-color);
+}
+
+.read-more button:hover i{
+    transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 1399px){
+    .about-wrapper::before{
+        top: 120%;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    .ser-card-title{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .about-wrapper::before{
+        top: 35%;
+        right: 5%;
+    }
+}
+
+/*What We Do */

@@ -28,7 +28,10 @@ import service3 from "./../../assets/img/service-image-3.jpg"
 import serviceIcon1 from "./../../assets/img/icon-service-item-1.svg"
 import serviceIcon2 from "./../../assets/img/icon-service-item-2.svg"
 import serviceIcon3 from "./../../assets/img/icon-service-item-3.svg"
-
+import whatIcon1 from "./../../assets/img/icon-what-we-1.svg"
+import whatIcon2 from "./../../assets/img/icon-what-we-2.svg"
+import whatIcon3 from "./../../assets/img/icon-what-we-3.svg"
+import whatIcon4 from "./../../assets/img/icon-what-we-4.svg"
 
 function Index() {
   return (
@@ -146,7 +149,8 @@ function Index() {
           </div>
         </div>
       </div>
-      <div className="service section my-5 py-5">
+      {/* SERVICES */}
+      <div className="service section py-5">
         <div className="container my-5 py-5">
           <div className="row section-head py-5">
             <div className="col-lg-6">
@@ -234,6 +238,60 @@ function Index() {
 
         
         </div>
+      </div>
+      {/* What We Do */}
+
+      <div className="container">
+          <div className="row section-head py-5">
+            <div className="col-lg-6">
+              <div className="section-title">
+                <h5><img src={titleShape} className='img-fluid me-2' alt="" />WHAT WE DO</h5>
+                <h2>Empowering success <span>freelance</span> solutions</h2>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <p>Explore our range of in-demand services designed to deliver exceptional results and meet your unique.</p>
+             
+            </div>
+          </div>
+          <div className="row g-4">
+              <div className="col-lg-6 service-wrap">
+                  <div className="service-card">
+                      <div className="service-icon mb-4">
+                          <img src={whatIcon1} alt="" />
+                      </div>
+                      <h5>Content Creation </h5>
+                      <p>Crafting compelling, SEO-friendly content that resonates with audience From blogs to website copy, we deliver engaiging</p>
+                  </div>
+              </div>
+              <div className="col-lg-6 service-wrap">
+                  <div className="service-card">
+                      <div className="service-icon mb-4">
+                          <img src={whatIcon2} alt="" />
+                      </div>
+                      <h5>Content Creation </h5>
+                      <p>Crafting compelling, SEO-friendly content that resonates with audience From blogs to website copy, we deliver engaiging</p>
+                  </div>
+              </div>
+              <div className="col-lg-6 service-wrap">
+                  <div className="service-card">
+                      <div className="service-icon mb-4">
+                          <img src={whatIcon3} alt="" />
+                      </div>
+                      <h5>Content Creation </h5>
+                      <p>Crafting compelling, SEO-friendly content that resonates with audience From blogs to website copy, we deliver engaiging</p>
+                  </div>
+              </div>
+              <div className="col-lg-6 service-wrap">
+                  <div className="service-card">
+                      <div className="service-icon mb-4">
+                          <img src={whatIcon4} alt="" />
+                      </div>
+                      <h5>Content Creation </h5>
+                      <p>Crafting compelling, SEO-friendly content that resonates with audience From blogs to website copy, we deliver engaiging</p>
+                  </div>
+              </div>
+          </div>
       </div>
     </>
   )
