@@ -37,6 +37,13 @@ import expertiseIcon02 from "./../../assets/img/icon-expertise-2.svg"
 import expertise from "./../../assets/img/expertise-image.png"
 
 import icon from "./../../assets/img/icon-pricing-1.svg"
+import author1 from "./../../assets/img/author-1.jpg"
+import author2 from "./../../assets/img/author-2.jpg"
+import author3 from "./../../assets/img/author-1.jpg"
+
+import { Swiper, SwiperSlide } from 'swiper/react'
+import "swiper/css"
+import { Autoplay } from 'swiper/modules'
 
 function Index() {
   return (
@@ -402,7 +409,7 @@ function Index() {
             <div className="row g-4 mt-5">
               <div className="row d-flex">
                 {/* Start */}
-                <div className="co1-x1-4 col-md-6 mb-4">
+                <div className="co1-xl-4 col-md-6 mb-4">
                   <div className="card pricing-item text-white bg-dark h-100 rounded-4 border-0 position-relative
 overflow-hidden">
                     <div className="position-absolute top-0 start-0 w-100 h-100"
@@ -447,7 +454,7 @@ overflow-hidden">
                 </div>
 
                 {/* Standart */}
-                <div className="co1-x1-4 col-md-6 mb-4">
+                <div className="co1-xl-4 col-md-6 mb-4">
                   <div className="card pricing-item text-white bg-dark h-100 rounded-4 border-0 position-relative
 overflow-hidden">
                     <div className="position-absolute top-0 start-0 w-100 h-100"
@@ -492,7 +499,7 @@ overflow-hidden">
                 </div>
 
                 {/* Pro */}
-                <div className="co1-x1-4 col-md-6 mb-4">
+                <div className="co1-xl-4 col-md-6 mb-4">
                   <div className="card pricing-item text-white bg-dark h-100 rounded-4 border-0 position-relative
 overflow-hidden">
                     <div className="position-absolute top-0 start-0 w-100 h-100"
@@ -555,6 +562,129 @@ overflow-hidden">
             </div>
           </div>
         </section>
+      </div>
+
+      <div className="large-section test-section position-relative pt-5">
+        {/* Testimonial */}
+
+        <div className="container py-5 text-white">
+          <div className="d-flex justify-content-center 
+              align-items-center mb-4">
+            <div className="container mb-5">
+              <div className="row section-head py-5">
+                <div className="col-lg-6">
+                  <div className="section-title">
+                    <h5>
+                      <img src={titleShape} className='img-fluid me-2' alt="" />testimonials </h5>
+                    <h2>What our  <span>client says</span> </h2>
+                  </div>
+                </div>
+                <div className="col-lg-6 d-flex justify-content-start align-items-end justify-content-lg-end ">
+                  <div className="btn-1">
+                    <button className='btn'>Contact Us</button>
+                    <img src={btnArrow} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <Swiper slidesPerView={2} spaceBetween={30} modules={[Autoplay]} loop={true} autoplay={{delay: 2000}} breakpoints={{
+            0: {slidesPerView: 1},
+            768: {slidesPerView: 2},
+          }}>
+            
+            <SwiperSlide>
+                <div className="tst-item rounded-4 p-4 h-100 position-relative ">
+                  <div className="mb-3 d-flex align-items-center gap-2">
+                    <div style={{color: "#BFF474"}}>
+                      <i className='fa-solid fa-star fs-5 me-2'></i>
+                      <i className='fa-solid fa-star fs-5 me-2'></i>
+                      <i className='fa-solid fa-star fs-5 me-2'></i>
+                      <i className='fa-solid fa-star fs-5 me-2'></i>
+                      <i className='fa-solid fa-star fs-5 me-2'></i>
+                    </div>
+                    <span className='fw-semibold'>5.0</span>
+                  </div>
+                  <h5 className='fw-bold'>Professional and friendly!</h5>
+                  <p className='text-white-80' style={{lineHeight: '1.7rem'}}>
+                  Professional and friendly!
+The team transformed our brand's online presence with creativity and
+precision. The results exceeded our expectations! Their digital marketing
+strategies helped us reach a broader audience and significantly boosted our
+sales.
+                  </p>
+                  <hr className='text-secondary' />
+                  <div className="d-flex align-items-center gap-3">
+                    <img src={author1} className='img-fluid rounded-circle' alt="" width="50" height="50" />
+                    <div>
+                      <h6 className='mb-0 fw-bold text-white fs-4'>dani watson</h6>
+                      <h6 className='text-white fs-6'>managin director</h6>
+                    </div>
+                  </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className="tst-item rounded-4 p-4 h-100 position-relative ">
+                  <div className="mb-3 d-flex align-items-center gap-2">
+                    <div style={{color: "#BFF474"}}>
+                      <i className='fa-solid fa-star fs-5 me-2'></i>
+                      <i className='fa-solid fa-star fs-5 me-2'></i>
+                      <i className='fa-solid fa-star fs-5 me-2'></i>
+                      <i className='fa-solid fa-star fs-5 me-2'></i>
+                      <i className='fa-solid fa-star fs-5 me-2'></i>
+                    </div>
+                    <span className='fw-semibold'>5.0</span>
+                  </div>
+                  <h5 className='fw-bold'>Professional and friendly!</h5>
+                  <p className='text-white-80' style={{lineHeight: '1.7rem'}}>
+                  Professional and friendly!
+The team transformed our brand's online presence with creativity and
+precision. The results exceeded our expectations! Their digital marketing
+strategies helped us reach a broader audience and significantly boosted our
+sales.
+                  </p>
+                  <hr className='text-secondary' />
+                  <div className="d-flex align-items-center gap-3">
+                    <img src={author1} className='img-fluid rounded-circle' alt="" width="50" height="50" />
+                    <div>
+                      <h6 className='mb-0 fw-bold text-white fs-4'>dani watson</h6>
+                      <h6 className='text-white fs-6'>managin director</h6>
+                    </div>
+                  </div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className="tst-item rounded-4 p-4 h-100 position-relative ">
+                  <div className="mb-3 d-flex align-items-center gap-2">
+                    <div style={{color: "#BFF474"}}>
+                      <i className='fa-solid fa-star fs-5 me-2'></i>
+                      <i className='fa-solid fa-star fs-5 me-2'></i>
+                      <i className='fa-solid fa-star fs-5 me-2'></i>
+                      <i className='fa-solid fa-star fs-5 me-2'></i>
+                      <i className='fa-solid fa-star fs-5 me-2'></i>
+                    </div>
+                    <span className='fw-semibold'>5.0</span>
+                  </div>
+                  <h5 className='fw-bold'>Professional and friendly!</h5>
+                  <p className='text-white-80' style={{lineHeight: '1.7rem'}}>
+                  Professional and friendly!
+The team transformed our brand's online presence with creativity and
+precision. The results exceeded our expectations! Their digital marketing
+strategies helped us reach a broader audience and significantly boosted our
+sales.
+                  </p>
+                  <hr className='text-secondary' />
+                  <div className="d-flex align-items-center gap-3">
+                    <img src={author1} className='img-fluid rounded-circle' alt="" width="50" height="50" />
+                    <div>
+                      <h6 className='mb-0 fw-bold text-white fs-4'>dani watson</h6>
+                      <h6 className='text-white fs-6'>managin director</h6>
+                    </div>
+                  </div>
+                </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
     </>
   )
