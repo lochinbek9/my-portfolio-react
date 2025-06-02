@@ -441,7 +441,7 @@ overflow-hidden">
                           </li>
                         </ul>
                       </div>
-                      <a href="#" className='btn-btn highlighted w-100'>Get Started </a>
+                      <a href="#" className='btn btn-highlighted w-100'>Get Started </a>
                     </div>
                   </div>
                 </div>
@@ -461,7 +461,7 @@ overflow-hidden">
                           <h2 className="fw-bold mb-0">$39<sub className="Ifs-6">/Per Month</sub></h2>
                         </div>
                       </div>
-                      <h4 className='text-white fw-bold fs-5 text-capitalize mb-3'>Regular Plan</h4>
+                      <h4 className='text-white fw-bold fs-5 text-capitalize mb-3'>Standart Plan</h4>
                       <div className="pricing-body bg-black rounded-4 p-4 mb-4">
                         <ul className="list-unstyled mb-0">
                           <li className="position-relative mb-3 pb-3" style={{ paddingLeft: 30, borderBottom: "1px solid #ffffff1a" }}>
@@ -486,7 +486,7 @@ overflow-hidden">
                           </li>
                         </ul>
                       </div>
-                      <a href="#" className='btn-btn highlighted w-100'>Get Started </a>
+                      <a href="#" className='btn btn-highlighted w-100'>Get Started </a>
                     </div>
                   </div>
                 </div>
@@ -506,7 +506,7 @@ overflow-hidden">
                           <h2 className="fw-bold mb-0">$49<sub className="Ifs-6">/Per Month</sub></h2>
                         </div>
                       </div>
-                      <h4 className='text-white fw-bold fs-5 text-capitalize mb-3'>Regular Plan</h4>
+                      <h4 className='text-white fw-bold fs-5 text-capitalize mb-3'>Premium Plan</h4>
                       <div className="pricing-body bg-black rounded-4 p-4 mb-4">
                         <ul className="list-unstyled mb-0">
                           <li className="position-relative mb-3 pb-3" style={{ paddingLeft: 30, borderBottom: "1px solid #ffffff1a" }}>
@@ -531,7 +531,7 @@ overflow-hidden">
                           </li>
                         </ul>
                       </div>
-                      <a href="#" className='btn-btn highlighted w-100'>Get Started </a>
+                      <a href="#" className='btn btn-highlighted w-100'>Get Started </a>
                     </div>
                   </div>
                 </div>
