@@ -400,7 +400,8 @@ function Index() {
             </div>
 
             <div className="row g-4 mt-5">
-              <div className="row">
+              <div className="row d-flex">
+                {/* Start */}
                 <div className="co1-x1-4 col-md-6 mb-4">
                   <div className="card pricing-item text-white bg-dark h-100 rounded-4 border-0 position-relative
 overflow-hidden">
@@ -415,15 +416,143 @@ overflow-hidden">
                           <h2 className="fw-bold mb-0">$29<sub className="Ifs-6">/Per Month</sub></h2>
                         </div>
                       </div>
+                      <h4 className='text-white fw-bold fs-5 text-capitalize mb-3'>Regular Plan</h4>
+                      <div className="pricing-body bg-black rounded-4 p-4 mb-4">
+                        <ul className="list-unstyled mb-0">
+                          <li className="position-relative mb-3 pb-3" style={{ paddingLeft: 30, borderBottom: "1px solid #ffffff1a" }}>
+                            <i className='fa-solid fa-circle-dot position-absolute' style={{
+                              top: 2, left: 0, color: "#bff747"
+                            }}></i> Hourly and fixed rates
+                          </li>
+                          <li className="position-relative mb-3 pb-3" style={{ paddingLeft: 30, borderBottom: "1px solid #ffffff1a" }}>
+                            <i className='fa-solid fa-circle-dot position-absolute' style={{
+                              top: 2, left: 0, color: "#bff747"
+                            }}></i> Dedicated freelancer support
+                          </li>
+                          <li className="position-relative mb-3 pb-3" style={{ paddingLeft: 30, borderBottom: "1px solid #ffffff1a" }}>
+                            <i className='fa-solid fa-circle-dot position-absolute' style={{
+                              top: 2, left: 0, color: "#bff747"
+                            }}></i> Expert consultion include
+                          </li>
+                          <li className="position-relative mb-3 pb-3" style={{ paddingLeft: 30, borderBottom: "1px solid #ffffff1a" }}>
+                            <i className='fa-solid fa-circle-dot position-absolute' style={{
+                              top: 2, left: 0, color: "#bff747"
+                            }}></i> Flexible payment plans
+                          </li>
+                        </ul>
+                      </div>
+                      <a href="#" className='btn-btn highlighted w-100'>Get Started </a>
+                    </div>
+                  </div>
+                </div>
 
-                      <h4 className='text-white fw-bold fs-5 text-capitalize mb-3'></h4>
+                {/* Standart */}
+                <div className="co1-x1-4 col-md-6 mb-4">
+                  <div className="card pricing-item text-white bg-dark h-100 rounded-4 border-0 position-relative
+overflow-hidden">
+                    <div className="position-absolute top-0 start-0 w-100 h-100"
+                      style={{ backgroundColor: "var(--secondary-color)", opacity: "9.4", zIndex: "-1" }}></div>
+                    <div className="card-body z-2 p-4 d-flex flex-column justify-content-between">
+                      <div className="pricing-header d-flex align-items-center mb-4">
+                        <div className="icon-box me-4 d-flex align-items-center justify-content-center rounded-circle overflow-hidden" style={{ height: "60", width: "60" }}>
+                          <img src={icon} alt="icon" className="img-fluid" />
+                        </div>
+                        <div className="pricing-price">
+                          <h2 className="fw-bold mb-0">$39<sub className="Ifs-6">/Per Month</sub></h2>
+                        </div>
+                      </div>
+                      <h4 className='text-white fw-bold fs-5 text-capitalize mb-3'>Regular Plan</h4>
+                      <div className="pricing-body bg-black rounded-4 p-4 mb-4">
+                        <ul className="list-unstyled mb-0">
+                          <li className="position-relative mb-3 pb-3" style={{ paddingLeft: 30, borderBottom: "1px solid #ffffff1a" }}>
+                            <i className='fa-solid fa-circle-dot position-absolute' style={{
+                              top: 2, left: 0, color: "#bff747"
+                            }}></i> Hourly and fixed rates
+                          </li>
+                          <li className="position-relative mb-3 pb-3" style={{ paddingLeft: 30, borderBottom: "1px solid #ffffff1a" }}>
+                            <i className='fa-solid fa-circle-dot position-absolute' style={{
+                              top: 2, left: 0, color: "#bff747"
+                            }}></i> Dedicated freelancer support
+                          </li>
+                          <li className="position-relative mb-3 pb-3" style={{ paddingLeft: 30, borderBottom: "1px solid #ffffff1a" }}>
+                            <i className='fa-solid fa-circle-dot position-absolute' style={{
+                              top: 2, left: 0, color: "#bff747"
+                            }}></i> Expert consultion include
+                          </li>
+                          <li className="position-relative mb-3 pb-3" style={{ paddingLeft: 30, borderBottom: "1px solid #ffffff1a" }}>
+                            <i className='fa-solid fa-circle-dot position-absolute' style={{
+                              top: 2, left: 0, color: "#bff747"
+                            }}></i> Flexible payment plans
+                          </li>
+                        </ul>
+                      </div>
+                      <a href="#" className='btn-btn highlighted w-100'>Get Started </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Pro */}
+                <div className="co1-x1-4 col-md-6 mb-4">
+                  <div className="card pricing-item text-white bg-dark h-100 rounded-4 border-0 position-relative
+overflow-hidden">
+                    <div className="position-absolute top-0 start-0 w-100 h-100"
+                      style={{ backgroundColor: "var(--secondary-color)", opacity: "9.4", zIndex: "-1" }}></div>
+                    <div className="card-body z-2 p-4 d-flex flex-column justify-content-between">
+                      <div className="pricing-header d-flex align-items-center mb-4">
+                        <div className="icon-box me-4 d-flex align-items-center justify-content-center rounded-circle overflow-hidden" style={{ height: "60", width: "60" }}>
+                          <img src={icon} alt="icon" className="img-fluid" />
+                        </div>
+                        <div className="pricing-price">
+                          <h2 className="fw-bold mb-0">$49<sub className="Ifs-6">/Per Month</sub></h2>
+                        </div>
+                      </div>
+                      <h4 className='text-white fw-bold fs-5 text-capitalize mb-3'>Regular Plan</h4>
+                      <div className="pricing-body bg-black rounded-4 p-4 mb-4">
+                        <ul className="list-unstyled mb-0">
+                          <li className="position-relative mb-3 pb-3" style={{ paddingLeft: 30, borderBottom: "1px solid #ffffff1a" }}>
+                            <i className='fa-solid fa-circle-dot position-absolute' style={{
+                              top: 2, left: 0, color: "#bff747"
+                            }}></i> Hourly and fixed rates
+                          </li>
+                          <li className="position-relative mb-3 pb-3" style={{ paddingLeft: 30, borderBottom: "1px solid #ffffff1a" }}>
+                            <i className='fa-solid fa-circle-dot position-absolute' style={{
+                              top: 2, left: 0, color: "#bff747"
+                            }}></i> Dedicated freelancer support
+                          </li>
+                          <li className="position-relative mb-3 pb-3" style={{ paddingLeft: 30, borderBottom: "1px solid #ffffff1a" }}>
+                            <i className='fa-solid fa-circle-dot position-absolute' style={{
+                              top: 2, left: 0, color: "#bff747"
+                            }}></i> Expert consultion include
+                          </li>
+                          <li className="position-relative mb-3 pb-3" style={{ paddingLeft: 30, borderBottom: "1px solid #ffffff1a" }}>
+                            <i className='fa-solid fa-circle-dot position-absolute' style={{
+                              top: 2, left: 0, color: "#bff747"
+                            }}></i> Flexible payment plans
+                          </li>
+                        </ul>
+                      </div>
+                      <a href="#" className='btn-btn highlighted w-100'>Get Started </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div className="d-flex flex-wrap justify-content-center text-success mt-5 gap-4 fs-6">
+              <div className="text-white">
+                <i className='bi bi-calendar-check me-2' style={{ color: "#bff747" }}></i>
+                Get 30 days free trial
+              </div>
 
+              <div className="text-white">
+                <i className='bi bi-cash-coin  me-2' style={{ color: "#bff747" }}></i>
+                No any hidden fees pay
+              </div>
 
+              <div className="text-white">
+                <i className='bi bi-clock  me-2' style={{ color: "#bff747" }}></i>
+                You can cancel
+              </div>
+            </div>
           </div>
         </section>
       </div>
