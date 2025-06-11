@@ -50,6 +50,24 @@ import "swiper/css"
 import { Autoplay } from 'swiper/modules'
 
 function Index() {
+  const faqData = [
+    {
+      question: "What services do freelancers offer?",
+      answer: "You can browse freelancer profiles, review their portfolios, and reach out to discuss your project Once you find the right match." 
+    }, 
+    {
+      question: "How do I hire a freelancer?",
+      answer: "You can browse freelancer profiles, review their portfolios, and reach out to discuss your project Once you find the right match." 
+    }, 
+    {
+      question: "What are the payment methods available?",
+      answer: "You can browse freelancer profiles, review their portfolios, and reach out to discuss your project Once you find the right match." 
+    }, 
+    {
+      question: "Can I negotiate the pricing?",
+      answer: "You can browse freelancer profiles, review their portfolios, and reach out to discuss your project Once you find the right match." 
+    }, 
+  ]
   return (
     <>
       <div className="video-bg">
@@ -697,8 +715,27 @@ overflow-hidden">
                       </div>
                       <div className="mt-5 help-box-main">
                          <div className="help-box p-4 overflow-hidden position-relative z-1 py-3 rounded-4 fw-bold d-inline-flex align-items-center gap-3 fs-5" style={{background: "#c5f237", color: "#000", maxWidth: "270px"}}>
-                            
+                            <img src={needhelp} alt="" />
+                            Need help? Ask! 
                          </div>
+                      </div>
+                        <div className="section-image d-inline-block 
+                        rounded-4 overflow-hidden shadow mt-3 faq-image2 ">
+                              <img src={faqImage1} className='img-fluid rounded-4' alt="Faq" />
+                        </div>
+                   </div>
+
+                   <div className="col-lg-6 mt-lg-0 mt-5">
+                      <div className="section-title">
+                        <h5><img src={titleShape} className='img-fluid me-2' alt="" />Faq</h5>
+                        <h2>Get Your <span>Answers</span>  </h2>
+                      </div>
+                      <div className="accordion accordion-flush" id='faqAccordion'>
+                          {faqData.map((item, index) =>(
+                            <div className="accordion-item bg-dark text-white border-0 mb-2 rounded" key={index}>
+
+                            </div>
+                          ))}
                       </div>
                    </div>
               </div>
