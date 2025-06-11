@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import videoBg from "./../../assets/img/bg-video.mp4"
 import titleShape from "./../../assets/img/title-shape.svg"
@@ -50,6 +50,12 @@ import "swiper/css"
 import { Autoplay } from 'swiper/modules'
 
 function Index() {
+
+  const [openIndex, setOpenIndex] = useState(null);
+  const toggleAccordion = (index) =>{
+    setOpenIndex(openIndex ===  index ? null : index);
+  }
+
   const faqData = [
     {
       question: "What services do freelancers offer?",
@@ -719,9 +725,13 @@ overflow-hidden">
                             Need help? Ask! 
                          </div>
                       </div>
+                      <div className="section-image d-inline-block 
+                        rounded-4 overflow-hidden shadow mt-3 faq-image1 ">
+                              <img src={faqImage1} className='img-fluid rounded-4' alt="Faq" />
+                        </div>
                         <div className="section-image d-inline-block 
                         rounded-4 overflow-hidden shadow mt-3 faq-image2 ">
-                              <img src={faqImage1} className='img-fluid rounded-4' alt="Faq" />
+                              <img src={faqImage2} className='img-fluid rounded-4' alt="Faq" />
                         </div>
                    </div>
 
@@ -733,7 +743,18 @@ overflow-hidden">
                       <div className="accordion accordion-flush" id='faqAccordion'>
                           {faqData.map((item, index) =>(
                             <div className="accordion-item bg-dark text-white border-0 mb-2 rounded" key={index}>
-
+                                <div className="accordion-header d-flex align-items-center px-2">
+                                    <button className={`accordion-button faq-btn border-light bg-dark text-white ${openIndex === index ? '' : "collapsed"}`} type='button' onClick={() => 
+                                      toggleAccordion(index)} style={{width: "100%"}}>
+                                      {item.question}
+                                      <i className={`bi ms-auto fs-5 ${openIndex ===  index ? "bi-dash-lg" : "bi-plus-lg"}`}></i>
+                                    </button>
+                                </div>
+                                <div className={`accordion-collapse collapse ${openIndex === index ? "show" : ""}`}>
+                                  <p className="accordion-body">
+                                    {item.answer}
+                                  </p>
+                                </div>
                             </div>
                           ))}
                       </div>
