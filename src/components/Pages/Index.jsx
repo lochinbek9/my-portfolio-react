@@ -41,6 +41,10 @@ import author1 from "./../../assets/img/author-1.jpg"
 import author2 from "./../../assets/img/author-2.jpg"
 import author3 from "./../../assets/img/author-1.jpg"
 
+import faqImage1 from "./../../assets/img/our-faqs-image-1.jpg"
+import faqImage2 from "./../../assets/img/our-faqs-image-2.jpg"
+import needhelp from "./../../assets/img/icon-need-help.svg"
+
 import { Swiper, SwiperSlide } from 'swiper/react'
 import "swiper/css"
 import { Autoplay } from 'swiper/modules'
@@ -588,102 +592,117 @@ overflow-hidden">
               </div>
             </div>
           </div>
-          <Swiper slidesPerView={2} spaceBetween={30} modules={[Autoplay]} loop={true} autoplay={{delay: 2000}} breakpoints={{
-            0: {slidesPerView: 1},
-            768: {slidesPerView: 2},
+          <Swiper slidesPerView={2} spaceBetween={30} modules={[Autoplay]} loop={true} autoplay={{ delay: 2000 }} breakpoints={{
+            0: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
           }}>
-            
+
             <SwiperSlide>
-                <div className="tst-item rounded-4 p-4 h-100 position-relative ">
-                  <div className="mb-3 d-flex align-items-center gap-2">
-                    <div style={{color: "#BFF474"}}>
-                      <i className='fa-solid fa-star fs-5 me-2'></i>
-                      <i className='fa-solid fa-star fs-5 me-2'></i>
-                      <i className='fa-solid fa-star fs-5 me-2'></i>
-                      <i className='fa-solid fa-star fs-5 me-2'></i>
-                      <i className='fa-solid fa-star fs-5 me-2'></i>
-                    </div>
-                    <span className='fw-semibold'>5.0</span>
+              <div className="tst-item rounded-4 p-4 h-100 position-relative ">
+                <div className="mb-3 d-flex align-items-center gap-2">
+                  <div style={{ color: "#BFF474" }}>
+                    <i className='fa-solid fa-star fs-5 me-2'></i>
+                    <i className='fa-solid fa-star fs-5 me-2'></i>
+                    <i className='fa-solid fa-star fs-5 me-2'></i>
+                    <i className='fa-solid fa-star fs-5 me-2'></i>
+                    <i className='fa-solid fa-star fs-5 me-2'></i>
                   </div>
-                  <h5 className='fw-bold'>Professional and friendly!</h5>
-                  <p className='text-white-80' style={{lineHeight: '1.7rem'}}>
+                  <span className='fw-semibold'>5.0</span>
+                </div>
+                <h5 className='fw-bold'>Professional and friendly!</h5>
+                <p className='text-white-80' style={{ lineHeight: '1.7rem' }}>
                   Professional and friendly!
-The team transformed our brand's online presence with creativity and
-precision. The results exceeded our expectations! Their digital marketing
-strategies helped us reach a broader audience and significantly boosted our
-sales.
-                  </p>
-                  <hr className='text-secondary' />
-                  <div className="d-flex align-items-center gap-3">
-                    <img src={author1} className='img-fluid rounded-circle' alt="" width="50" height="50" />
-                    <div>
-                      <h6 className='mb-0 fw-bold text-white fs-4'>dani watson</h6>
-                      <h6 className='text-white fs-6'>managin director</h6>
-                    </div>
+                  The team transformed our brand's online presence with creativity and
+                  precision. The results exceeded our expectations! Their digital marketing
+                  strategies helped us reach a broader audience and significantly boosted our
+                  sales.
+                </p>
+                <hr className='test-info-line w-100' />
+                <div className="d-flex align-items-center gap-3">
+                  <img src={author1} className='img-fluid rounded-circle' alt="" width="50" height="50" />
+                  <div>
+                    <h6 className='mb-0 fw-bold text-white fs-4'>dani watson</h6>
+                    <h6 className='text-white fs-6'>managin director</h6>
                   </div>
                 </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="tst-item rounded-4 p-4 h-100 position-relative ">
-                  <div className="mb-3 d-flex align-items-center gap-2">
-                    <div style={{color: "#BFF474"}}>
-                      <i className='fa-solid fa-star fs-5 me-2'></i>
-                      <i className='fa-solid fa-star fs-5 me-2'></i>
-                      <i className='fa-solid fa-star fs-5 me-2'></i>
-                      <i className='fa-solid fa-star fs-5 me-2'></i>
-                      <i className='fa-solid fa-star fs-5 me-2'></i>
-                    </div>
-                    <span className='fw-semibold'>5.0</span>
+              <div className="tst-item rounded-4 p-4 h-100 position-relative ">
+                <div className="mb-3 d-flex align-items-center gap-2">
+                  <div style={{ color: "#BFF474" }}>
+                    <i className='fa-solid fa-star fs-5 me-2'></i>
+                    <i className='fa-solid fa-star fs-5 me-2'></i>
+                    <i className='fa-solid fa-star fs-5 me-2'></i>
+                    <i className='fa-solid fa-star fs-5 me-2'></i>
+                    <i className='fa-solid fa-star fs-5 me-2'></i>
                   </div>
-                  <h5 className='fw-bold'>Professional and friendly!</h5>
-                  <p className='text-white-80' style={{lineHeight: '1.7rem'}}>
+                  <span className='fw-semibold'>5.0</span>
+                </div>
+                <h5 className='fw-bold'>Professional and friendly!</h5>
+                <p className='text-white-80' style={{ lineHeight: '1.7rem' }}>
                   Professional and friendly!
-The team transformed our brand's online presence with creativity and
-precision. The results exceeded our expectations! Their digital marketing
-strategies helped us reach a broader audience and significantly boosted our
-sales.
-                  </p>
-                  <hr className='text-secondary' />
-                  <div className="d-flex align-items-center gap-3">
-                    <img src={author1} className='img-fluid rounded-circle' alt="" width="50" height="50" />
-                    <div>
-                      <h6 className='mb-0 fw-bold text-white fs-4'>dani watson</h6>
-                      <h6 className='text-white fs-6'>managin director</h6>
-                    </div>
+                  The team transformed our brand's online presence with creativity and
+                  precision. The results exceeded our expectations! Their digital marketing
+                  strategies helped us reach a broader audience and significantly boosted our
+                  sales.
+                </p>
+                <hr className='text-secondary' />
+                <div className="d-flex align-items-center gap-3">
+                  <img src={author1} className='img-fluid rounded-circle' alt="" width="50" height="50" />
+                  <div>
+                    <h6 className='mb-0 fw-bold text-white fs-4'>dani watson</h6>
+                    <h6 className='text-white fs-6'>managin director</h6>
                   </div>
                 </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="tst-item rounded-4 p-4 h-100 position-relative ">
-                  <div className="mb-3 d-flex align-items-center gap-2">
-                    <div style={{color: "#BFF474"}}>
-                      <i className='fa-solid fa-star fs-5 me-2'></i>
-                      <i className='fa-solid fa-star fs-5 me-2'></i>
-                      <i className='fa-solid fa-star fs-5 me-2'></i>
-                      <i className='fa-solid fa-star fs-5 me-2'></i>
-                      <i className='fa-solid fa-star fs-5 me-2'></i>
-                    </div>
-                    <span className='fw-semibold'>5.0</span>
+              <div className="tst-item rounded-4 p-4 h-100 position-relative ">
+                <div className="mb-3 d-flex align-items-center gap-2">
+                  <div style={{ color: "#BFF474" }}>
+                    <i className='fa-solid fa-star fs-5 me-2'></i>
+                    <i className='fa-solid fa-star fs-5 me-2'></i>
+                    <i className='fa-solid fa-star fs-5 me-2'></i>
+                    <i className='fa-solid fa-star fs-5 me-2'></i>
+                    <i className='fa-solid fa-star fs-5 me-2'></i>
                   </div>
-                  <h5 className='fw-bold'>Professional and friendly!</h5>
-                  <p className='text-white-80' style={{lineHeight: '1.7rem'}}>
+                  <span className='fw-semibold'>5.0</span>
+                </div>
+                <h5 className='fw-bold'>Professional and friendly!</h5>
+                <p className='text-white-80' style={{ lineHeight: '1.7rem' }}>
                   Professional and friendly!
-The team transformed our brand's online presence with creativity and
-precision. The results exceeded our expectations! Their digital marketing
-strategies helped us reach a broader audience and significantly boosted our
-sales.
-                  </p>
-                  <hr className='text-secondary' />
-                  <div className="d-flex align-items-center gap-3">
-                    <img src={author1} className='img-fluid rounded-circle' alt="" width="50" height="50" />
-                    <div>
-                      <h6 className='mb-0 fw-bold text-white fs-4'>dani watson</h6>
-                      <h6 className='text-white fs-6'>managin director</h6>
-                    </div>
+                  The team transformed our brand's online presence with creativity and precision. The results exceeded our expectations! Their digital marketing strategies helped us reach a broader audience and significantly boosted our sales.
+                </p>
+                <hr className='test-info-line w-100' />
+                <div className="d-flex align-items-center gap-3">
+                  <img src={author3} className='img-fluid rounded-circle' alt="" width="50" height="50" />
+                  <div>
+                    <h6 className='mb-0 fw-bold text-white fs-4'>dani watson</h6>
+                    <h6 className='text-white fs-6'>managin director</h6>
                   </div>
                 </div>
+              </div>
             </SwiperSlide>
           </Swiper>
+        </div>
+        {/* Faq */}
+
+        <div className="py-5 my-5 text-white position-relative">
+          <div className="container">
+              <div className="row align-items-center justify-content-between w-100">
+                   <div className="col-lg-6 mb-lg-0 mb-5 text-start position-relative">
+                      <div className="d-inline-block rounded-4 overflow-hidden shadow mb-3">
+                        <img src={needhelp} className='img-fluid rounded-4' alt="" />
+                      </div>
+                      <div className="mt-5 help-box-main">
+                         <div className="help-box p-4 overflow-hidden position-relative z-1 py-3 rounded-4 fw-bold d-inline-flex align-items-center gap-3 fs-5" style={{background: "#c5f237", color: "#000", maxWidth: "270px"}}>
+                            
+                         </div>
+                      </div>
+                   </div>
+              </div>
+          </div>
         </div>
       </div>
     </>
