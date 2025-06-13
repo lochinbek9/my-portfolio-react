@@ -45,6 +45,12 @@ import faqImage1 from "./../../assets/img/our-faqs-image-1.jpg"
 import faqImage2 from "./../../assets/img/our-faqs-image-2.jpg"
 import needhelp from "./../../assets/img/icon-need-help.svg"
 
+import blog1 from "./../../assets/img/blog1.jpeg"
+import blog2 from "./../../assets/img/blog2.jpeg"
+import blog3 from "./../../assets/img/blog3.jpeg"
+
+import arrowdark from "./../../assets/img/arrow-dark.svg"
+
 import { Swiper, SwiperSlide } from 'swiper/react'
 import "swiper/css"
 import { Autoplay } from 'swiper/modules'
@@ -52,28 +58,31 @@ import { Autoplay } from 'swiper/modules'
 function Index() {
 
   const [openIndex, setOpenIndex] = useState(null);
-  const toggleAccordion = (index) =>{
-    setOpenIndex(openIndex ===  index ? null : index);
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
   }
 
   const faqData = [
     {
       question: "What services do freelancers offer?",
-      answer: "You can browse freelancer profiles, review their portfolios, and reach out to discuss your project Once you find the right match." 
-    }, 
+      answer: "You can browse freelancer profiles, review their portfolios, and reach out to discuss your project Once you find the right match."
+    },
     {
       question: "How do I hire a freelancer?",
-      answer: "You can browse freelancer profiles, review their portfolios, and reach out to discuss your project Once you find the right match." 
-    }, 
+      answer: "You can browse freelancer profiles, review their portfolios, and reach out to discuss your project Once you find the right match."
+    },
     {
       question: "What are the payment methods available?",
-      answer: "You can browse freelancer profiles, review their portfolios, and reach out to discuss your project Once you find the right match." 
-    }, 
+      answer: "You can browse freelancer profiles, review their portfolios, and reach out to discuss your project Once you find the right match."
+    },
     {
       question: "Can I negotiate the pricing?",
-      answer: "You can browse freelancer profiles, review their portfolios, and reach out to discuss your project Once you find the right match." 
-    }, 
-  ]
+      answer: "You can browse freelancer profiles, review their portfolios, and reach out to discuss your project Once you find the right match."
+    },
+  ];
+
+  const date = new Date()
+  
   return (
     <>
       <div className="video-bg">
@@ -421,8 +430,8 @@ function Index() {
                 <div className="section-title">
                   <h5>
                     <img src={titleShape} className='img-fluid me-2' alt="" />
-                    <h2>Flexible <span>pricing </span> plan </h2>
                   </h5>
+                  <h2>Flexible <span>pricing </span> plan </h2>
                 </div>
               </div>
               <div className="col-lg-6">
@@ -712,55 +721,145 @@ overflow-hidden">
         </div>
         {/* Faq */}
 
-        <div className="py-5 my-5 text-white position-relative">
+        <div className="py-5 my-5 text-white faq-wrapper position-relative">
           <div className="container">
-              <div className="row align-items-center justify-content-between w-100">
-                   <div className="col-lg-6 mb-lg-0 mb-5 text-start position-relative">
-                      <div className="d-inline-block rounded-4 overflow-hidden shadow mb-3">
-                        <img src={needhelp} className='img-fluid rounded-4' alt="" />
-                      </div>
-                      <div className="mt-5 help-box-main">
-                         <div className="help-box p-4 overflow-hidden position-relative z-1 py-3 rounded-4 fw-bold d-inline-flex align-items-center gap-3 fs-5" style={{background: "#c5f237", color: "#000", maxWidth: "270px"}}>
-                            <img src={needhelp} alt="" />
-                            Need help? Ask! 
-                         </div>
-                      </div>
-                      <div className="section-image d-inline-block 
+            <div className="row align-items-center justify-content-between w-100">
+              <div className="col-lg-6 mb-lg-0 mb-5 text-start position-relative">
+                <div className="d-inline-block rounded-4 overflow-hidden shadow mb-3">
+                  <img src={needhelp} className='img-fluid rounded-4' alt="" />
+                </div>
+                <div className="mt-5 help-box-main">
+                  <div className="help-box p-4 overflow-hidden position-relative z-1 py-3 rounded-4 fw-bold d-inline-flex align-items-center gap-3 fs-5" style={{ background: "#c5f237", color: "#000", maxWidth: "270px" }}>
+                    <img src={needhelp} alt="" />
+                    Need help? Ask!
+                  </div>
+                </div>
+                <div className="section-image d-inline-block 
                         rounded-4 overflow-hidden shadow mt-3 faq-image1 ">
-                              <img src={faqImage1} className='img-fluid rounded-4' alt="Faq" />
-                        </div>
-                        <div className="section-image d-inline-block 
+                  <img src={faqImage1} className='img-fluid rounded-4' alt="Faq" />
+                </div>
+                <div className="section-image d-inline-block 
                         rounded-4 overflow-hidden shadow mt-3 faq-image2 ">
-                              <img src={faqImage2} className='img-fluid rounded-4' alt="Faq" />
-                        </div>
-                   </div>
-
-                   <div className="col-lg-6 mt-lg-0 mt-5">
-                      <div className="section-title">
-                        <h5><img src={titleShape} className='img-fluid me-2' alt="" />Faq</h5>
-                        <h2>Get Your <span>Answers</span>  </h2>
-                      </div>
-                      <div className="accordion accordion-flush" id='faqAccordion'>
-                          {faqData.map((item, index) =>(
-                            <div className="accordion-item bg-dark text-white border-0 mb-2 rounded" key={index}>
-                                <div className="accordion-header d-flex align-items-center px-2">
-                                    <button className={`accordion-button faq-btn border-light bg-dark text-white ${openIndex === index ? '' : "collapsed"}`} type='button' onClick={() => 
-                                      toggleAccordion(index)} style={{width: "100%"}}>
-                                      {item.question}
-                                      <i className={`bi ms-auto fs-5 ${openIndex ===  index ? "bi-dash-lg" : "bi-plus-lg"}`}></i>
-                                    </button>
-                                </div>
-                                <div className={`accordion-collapse collapse ${openIndex === index ? "show" : ""}`}>
-                                  <p className="accordion-body">
-                                    {item.answer}
-                                  </p>
-                                </div>
-                            </div>
-                          ))}
-                      </div>
-                   </div>
+                  <img src={faqImage2} className='img-fluid rounded-4' alt="Faq" />
+                </div>
               </div>
+
+              <div className="col-lg-6 mt-lg-0 mt-5">
+                <div className="section-title faq-title mb-5 ">
+                  <h5>
+                    <img src={titleShape} className='img-fluid me-2' alt="" />Faq</h5>
+                  <h2>Get Your <span>Answers</span>  </h2>
+                </div>
+                <div className="accordion accordion-flush" id='faqAccordion'>
+                  {faqData.map((item, index) => (
+                    <div className="accordion-item bg-dark text-white border-0 mb-2 rounded" key={index}>
+                      <div className="accordion-header d-flex align-items-center px-2">
+                        <button className={`accordion-button faq-btn border-light bg-dark text-white ${openIndex === index ? '' : "collapsed"}`} type='button' onClick={() =>
+                          toggleAccordion(index)} style={{ width: "100%" }}>
+                          {item.question}
+                          <i className={`bi ms-auto fs-5 ${openIndex === index ? "bi-dash-lg" : "bi-plus-lg"}`}></i>
+                        </button>
+                      </div>
+                      <div className={`accordion-collapse collapse ${openIndex === index ? "show" : ""}`}>
+                        <p className="accordion-body">
+                          {item.answer}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+
+      {/* BLOG */}
+
+      <div className='py-5 bg-black'>
+        <div className='container mb-5'>
+          <div className="row section-head py-5 mb-5">
+            <div className="col-lg-6">
+              <div className="section-title">
+                <h5>
+                  <img src={titleShape} className='img-fluid me-2' alt="" />Latest blogs </h5>
+                <h2> Our <span>Latest insight</span> </h2>
+              </div>
+            </div>
+            <div className="col-lg-6 d-flex justify-content-start align-items-end justify-content-lg-end ">
+              <div className="btn-1">
+                <button className='btn'>See All Post</button>
+                <img src={btnArrow} alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div className='container'>
+            <div className='row g-4 justify-content-center '>
+                <div className='col-md-6 col-lg-4'>
+                  <div className='card bg-black text-white border-0 h-100 rounded-4'>
+                     <div className='blog-image section-image overflow-hidden position-relative w-100 rounded-5'>
+                        <img src={blog1} alt="blog-image" className='card-img-top rounded-5' />
+                     </div>
+                     <div className='card-body p-0 pt-3'>
+                        <h5 className='card-title fw-bold fs-4 pb-3'>
+                          Top trends in Freelance Work for <br /> 
+                          {date.getFullYear() } Top Priority
+                        </h5>
+                        <a href="#" className='fw-semibold fs-5' style={{color: "#c6ff00"}}>
+                          Read More <span className='bi bi-arrow-up-right ms-1'> </span>
+                        </a>
+                     </div>
+                  </div>
+                </div>
+
+                <div className='col-md-6 col-lg-4'>
+                  <div className='card bg-black text-white border-0 h-100 rounded-4'>
+                     <div className='blog-image section-image overflow-hidden position-relative w-100 rounded-5'>
+                        <img src={blog2} alt="blog-image" className='card-img-top rounded-5' />
+                     </div>
+                     <div className='card-body p-0 pt-3'>
+                        <h5 className='card-title fw-bold fs-4 pb-3'>
+                         How to build a Strong Freelance Portfolio  {date.getFullYear()}
+                        </h5>
+                        <a href="#" className='fw-semibold fs-5' style={{color: "#c6ff00"}}>
+                          Read More <span className='bi bi-arrow-up-right ms-1'> </span>
+                        </a>
+                     </div>
+                  </div>
+                </div>
+
+                <div className='col-md-6 col-lg-4'>
+                  <div className='card bg-black text-white border-0 h-100 rounded-4'>
+                     <div className='blog-image section-image overflow-hidden position-relative w-100 rounded-5'>
+                        <img src={blog3} alt="blog-image" className='card-img-top rounded-5' />
+                     </div>
+                     <div className='card-body p-0 pt-3'>
+                        <h5 className='card-title fw-bold fs-4 pb-3'>
+                        Freelancer Taxes What  You Need To know   
+                        </h5>
+                        <a href="#" className='fw-semibold fs-5' style={{color: "#c6ff00"}}>
+                          Read More <span className='bi bi-arrow-up-right ms-1'> </span>
+                        </a>
+                     </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Contact */}
+      <div className='bg-black my-5 py-5 contact-container position-relative' style={{overflowX: "hidden"}}>
+        <div className='container'>
+           <div className='contact-title text-center text-white position-relative'>
+                  <span className='z-1'>Let's Collaborate</span>
+                  <h2>Let's Work Together</h2>
+                  <div className='work-together-btn'>
+                      <img src={arrowdark} alt="arrow" />
+                      <span>Get In Touch</span>
+                  </div>
+           </div>
         </div>
       </div>
     </>

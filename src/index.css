@@ -884,5 +884,98 @@ img{
     margin-bottom: 30px !important;
     padding: 0 !important;
     transition: var(--transition-regular);
-    
+    overflow: hidden !important;
+}
+
+.accordion-collapse{
+    overflow: hidden;
+    min-height: 0;
+    transition: var(--transition-regular);
+}
+
+.accordion-collapse.show{
+    min-height: 300px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .faq-btn{
+        font-size: 18px;
+    }
+    .faq-image2{
+        position: absolute;
+        bottom: -125px;
+        right: 12px;
+    }
+
+    .faq-title h2{
+         font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 991px ) {
+    .faq-image2{
+        bottom: -85px;
+        right: 85px;
+    }
+}
+
+@media only screen and (max-width: 767px ) {
+    .faq-image2{
+        bottom: -40%;
+        right: 85px;
+    }
+}
+
+@media only screen and (max-width: 575px ) {
+    .faq-image2{
+        right: 0;
+    }
+}
+
+
+.faq-wrapper::before{
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 10%;
+    background: url(./assets/img/section-bg-shape-5.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    transform: translateY(-50%);
+    opacity: 50%;
+    animation: circlemoverotate 10s infinite linear;
+    animation-direction: alternate;
+}
+
+/* CONTACT */
+
+.contact-title{
+    padding: 80px 0;
+    position: relative;
+    background: url(./assets/img/work-together-bg-gradient.png) no-repeat;
+    background-position: center center;
+    background-size: auto;
+    text-align: center;
+    z-index: 1;    
+}
+
+.contact-container{
+     position: relative;
+}
+
+.contact-container::after{
+    content: '';
+    position: absolute;
+    display: block;
+    background: url(./assets/img/work-together-bg-gradient.png) no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 30%;
+    z-index: 0;
 }
