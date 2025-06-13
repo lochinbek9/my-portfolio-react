@@ -952,6 +952,10 @@ img{
 
 /* CONTACT */
 
+.contact-container{
+    overflow-x: hidden !important;
+}
+
 .contact-title{
     padding: 80px 0;
     position: relative;
@@ -978,4 +982,201 @@ img{
     top: 0;
     left: 30%;
     z-index: 0;
+}
+
+.contact-title span{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.contact-title h2{
+    font-size: 12rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.work-together-btn{
+     background-color: var(--prim-color);
+     border-radius: 50%;
+     width: 150px;
+     height: 150px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+    flex-direction: column;
+    color: var(--black-color);
+    font-weight: 500;
+    align-content: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease-in-out; 
+    cursor: pointer;    
+}
+
+.work-together-btn:hover{
+    background-color: var(--light-color);
+    transition: var(--transition-slow);
+}
+
+.work-together-btn img{
+    transition: var(--transition-slow);
+}
+
+.work-together-btn:hover span{
+    color: var(--white-color);
+    transition: var(--transition-slow);
+}
+
+.work-together-btn:hover img{
+    filter: brightness(0) invert(1);
+    transform: rotate(45deg);
+}
+
+.contact-container::before{
+    content: '';
+    position: absolute;
+    display: block;
+    right: -20px;
+    top: 50%;
+    background: url(./assets/img/section-bg-shape-7.png) no-repeat;
+    background-position: center center;
+    width: 250px;
+    height: 250px;
+    transform: translateY(-50%);
+    opacity: 50%;
+    animation: circlemoverotate 10s infinite linear;
+    animation-duration: alternate;
+}
+
+@keyframes circlemoverotate  {
+    0%{
+        transform: translateY(0) rotate(0);
+    }
+
+    100%{
+        transform: translateY(-100%) rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 1399px) {
+    .contact-title h2{
+        font-size: 10rem;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    .contact-title h2{
+        font-size: 8rem;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .contact-title h2{
+        font-size: 6rem;
+    }
+
+    .work-together-btn{
+        width: 120px;
+        height: 120px;
+    }
+
+    .work-together-btn span{
+        font-size: .9rem;
+    }
+
+    .contact-title span{
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .contact-title h2{
+        font-size: 1rem;
+    }
+}
+
+/* FOOTER */
+
+.lime-bg{
+    background-color: var(--prim-color);
+}
+
+.social-icon{
+    border: 1px solid var(--prim-color);
+    color: var(--prim-color);
+    padding: 8px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+.footer-link a{
+    color: #fff;
+    margin-right: 15px;
+}
+
+.footer-group{
+    display: flex;
+}
+
+.footer-group input{
+    width: calc(100% - 60px);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: var(--white-color) !important;
+    background: transparent;
+    border: 1px solid #ffffff1a;
+    border-radius: 100px;
+    outline: none;
+    box-shadow: none;
+    padding: 15px 20px;
+}
+
+.footer-group input::placeholder{
+    color: var(--white-color);
+}
+
+.footer-group input:focus{
+    border: 1px solid #ffffff1a;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.footer-group button{
+    background-color: var(--prim-color);
+    width: 60px;
+    height: 60px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; 
+    transition: all .3s ease-in-out;
+}
+
+.footer-icon{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--prim-color);
+    border-radius: 50%;
+    line-height: 40px;
+    transition: var(--transition-regular);
+}
+
+.footer-icon i{
+    color: var(--prim-color);
+    transform-origin: var(--transition-regular);
+}
+
+.footer-icon:hover{
+    border: 1px solid var(--white-color);
+}
+
+.footer-icon:hover i{
+    color: var(--white-color);
 }
